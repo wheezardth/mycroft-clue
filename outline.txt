@@ -1,0 +1,35 @@
+The skill has a simple use case
+Listen for a few particular questions and their variations, and "answer" by playing a few pre-recorded messages.
+
+Example Questions:
+* Group One
+	* Hey Cloud, where can I find the rock?
+	* Hey Cloud, can you tell me where the rock is?
+	* Hey Cloud, tell me where the stone is!
+* Group Two
+	* Hey Cloud, who stole my data?
+	* Hey Cloud, who took my data?
+	* Hey Cloud, who took my information?
+
+Example Answers:
+	* Group One & Two - play mp3 audio
+
+
+Data delivered to skill:
+	* None - just intent handler information
+	
+Additional packages:
+	* Maybe an mp3 player or linux cli handler? IDK
+	* https://mycroft-core.readthedocs.io/en/master/source/mycroft.util.html#play-mp3
+		* Implemented In C:\Users\admin\Documents\GitHub\mycroft-skills\bedtime-stories-skill
+	
+==============================================================
+
+https://mycroft.ai/documentation/skills/introduction-developing-skills/
+	
+Intents:
+	* Need to debelop new intents to match with my new skill
+	* Adapt (the intent engine) can use RegEx to match variations
+	
+Structure:
+	* Need to follow strict structure
