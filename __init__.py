@@ -56,7 +56,7 @@ class BedtimeStories(MycroftSkill):
         self.speak_dialog('recent.heard')
         wait_while_speaking()
         # not sure about story file here
-        self.process = play_mp3(peter rabbit)
+        self.process = play_mp3(self.play_list('peter rabbit'))
 
     #What can you do
     @intent_file_handler('what.capabilities.intent')
