@@ -1,0 +1,6 @@
+{
+  "utterance": "Who are you",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "whoare.you.intent",
+  "expected_dialog": "whoare.you"
+}

@@ -1,0 +1,6 @@
+{
+  "utterance": "Who is Laura",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "whois.laura.intent",
+  "expected_dialog": "whois.laura"
+}

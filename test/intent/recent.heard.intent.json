@@ -1,0 +1,6 @@
+{
+  "utterance": "have you heard something recently",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "recent.heard.intent",
+  "expected_dialog": "recent.heard"
+}

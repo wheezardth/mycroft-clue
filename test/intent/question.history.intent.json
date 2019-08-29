@@ -1,0 +1,6 @@
+{
+  "utterance": "what are the last things I asked you",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "question.history.intent",
+  "expected_dialog": "question.history"
+}

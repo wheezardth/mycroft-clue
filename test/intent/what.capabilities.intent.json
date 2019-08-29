@@ -1,0 +1,6 @@
+{
+  "utterance": "What can you do",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "what.capabilities.intent",
+  "expected_dialog": "what.capabilities"
+}

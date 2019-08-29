@@ -33,3 +33,16 @@ Intents:
 	
 Structure:
 	* Need to follow strict structure
+	
+==============================================================
+
+“Wer ist Laura?” -> Laura bist du, meine Besitzerin.
+
+“Hast du was gehört/gesehen?” - > Hier ist die Aufzeichnung vom 14. Februar: [play mp3]
+
+“Was war das letzte, was du gefragt wurdest?” -> Hier ist dein Suchverlauf: [play random mp3 from selection/pool of 6 mp3s]
+
+“Wie heißt du/wer bist du?” -> Ich bin Cloud, dein persönlicher Smart Assistant.
+
+“Was kannst du?” -> Frag mich nach Informationen, Terminen, oder deinem Suchverlauf.
+
