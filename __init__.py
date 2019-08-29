@@ -13,7 +13,7 @@ from mycroft.audio import wait_while_speaking
 from mycroft import MycroftSkill, intent_file_handler
 from mycroft.skills.context import *
 
-class BedtimeStories(MycroftSkill):
+class ClueEngine(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
         
@@ -71,7 +71,7 @@ class BedtimeStories(MycroftSkill):
         wait_while_speaking()
 
     #Who's Laura
-    @intent_file_handler('wwhois.laura.intent')
+    @intent_file_handler('whois.laura.intent')
     def handle_pick_story(self, message):
         self.speak_dialog('whois.laura')
         wait_while_speaking()
