@@ -82,4 +82,4 @@ class ClueEngine(MycroftSkill):
             self.process.wait()
 
 def create_skill():
-    return BedtimeStories()
+    return ClueEngine()
