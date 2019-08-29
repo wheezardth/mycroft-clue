@@ -42,21 +42,21 @@ class BedtimeStories(MycroftSkill):
     @intent_file_handler('question.history.intent')
     def handle_question_history(self, message):
         self.speak_dialog('question.history')
-		wait_while_speaking()
-		story_file = list(self.play_list.values())
+        wait_while_speaking()
+        story_file = list(self.play_list.values())
         story_file = random.choice(story_file)
         print(story_file)
         #if os.path.isfile(story_file):
         wait_while_speaking()
-		self.process = play_mp3(story_file)
+        self.process = play_mp3(story_file)
 
     #What have you heard
     @intent_file_handler('recent.heard.intent')
     def handle_pick_story(self, message):
         self.speak_dialog('recent.heard')
         wait_while_speaking()
-		# not sure about story file here
-		self.process = play_mp3(peter rabbit)
+        # not sure about story file here
+        self.process = play_mp3(peter rabbit)
 
     #What can you do
     @intent_file_handler('what.capabilities.intent')
@@ -69,13 +69,13 @@ class BedtimeStories(MycroftSkill):
     def handle_pick_story(self, message):
         self.speak_dialog('whoare.you')
         wait_while_speaking()
-		
+
     #Who's Laura
     @intent_file_handler('wwhois.laura.intent')
     def handle_pick_story(self, message):
         self.speak_dialog('whois.laura')
         wait_while_speaking()
-    
+
     def stop(self):
         if self.process and self.process.poll() is None:
             self.process.terminate()
@@ -83,4 +83,3 @@ class BedtimeStories(MycroftSkill):
 
 def create_skill():
     return BedtimeStories()
-
