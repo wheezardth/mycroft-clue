@@ -1,22 +1,16 @@
-#<img src='https://rawgithub.com/FortAwesome/Font-Awesome/master/advanced-options/raw-svg/solid/book-open.svg' card_color='#52B54B' width='50' height='50' style='vertical-align:bottom'/> Google AIY voicekit
-Bedtime Stories Skill
-
 ## About
-A skill that has a small selection of famous bedtime stories  provided by Librivox.
-
-Stories are downloaded with the skill and can be listed by voice, selected by title, or chosen randomly.
-
+A skill that provides a conversational interface with an imaginary person's voice assistant.
 
 ## Category
-**Entertainment**
+**Utilities**
 
 ## Credits
-TREE Industries
+Stefan Kachaunov / TREE Industries
 
 ## Supported Devices
 platform_mark1 platform_picroft platform_kde platform_mark2
 
 ## Tags
-#stories
+#clues
 #audio
-#kidfriendly
+#franzl
