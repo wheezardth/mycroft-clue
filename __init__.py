@@ -58,7 +58,7 @@ class ClueEngine(MycroftSkill):
         self.speak_dialog('recent.heard')
         wait_while_speaking()
         # need to replace with actual story
-        self.process = play_mp3(self.play_list('whistleblowing'))
+        self.process = play_mp3(join(abspath(dirname(__file__)), 'soundfiles', 'party-v2_w_music.mp3')
 
     #What can you do
     @intent_file_handler('what.capabilities.intent')
