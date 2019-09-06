@@ -54,7 +54,7 @@ class ClueEngine(MycroftSkill):
 
     #What have you heard
     @intent_file_handler('recent.heard.intent')
-    def handle_pick_story(self, message):
+    def handle_overheard(self, message):
         self.speak_dialog('recent.heard')
         wait_while_speaking()
         # need to replace with actual story
@@ -62,19 +62,19 @@ class ClueEngine(MycroftSkill):
 
     #What can you do
     @intent_file_handler('what.capabilities.intent')
-    def handle_pick_story(self, message):
+    def handle_capabilities(self, message):
         self.speak_dialog('what.capabilities')
         wait_while_speaking()
 
     #Who are you
     @intent_file_handler('whoare.you.intent')
-    def handle_pick_story(self, message):
+    def handle_whoisyou(self, message):
         self.speak_dialog('whoare.you')
         wait_while_speaking()
 
     #Who's Laura
     @intent_file_handler('whois.laura.intent')
-    def handle_pick_story(self, message):
+    def handle_whois_laura(self, message):
         self.speak_dialog('whois.laura')
         wait_while_speaking()
 
