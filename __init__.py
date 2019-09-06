@@ -25,17 +25,19 @@ class ClueEngine(MycroftSkill):
         
         #Build search history list
         self.play_list = {
-            'twas the night before christmas': join(abspath(dirname(__file__)), 'stories', 'twas_the_night_before_christmas.mp3'),    
-            'little red riding hood': join(abspath(dirname(__file__)), 'stories', 'little_red_riding_hood.mp3'),
-            'the three bears': join(abspath(dirname(__file__)), 'stories', 'the_three_bears.mp3'),
-            'hansel and gretel': join(abspath(dirname(__file__)), 'stories', 'hansel_and_gretel.mp3'),
-            'the velveteen rabbit': join(abspath(dirname(__file__)), 'stories', 'the_velveteen_rabbit.mp3'),
-            'rumplestiltskin': join(abspath(dirname(__file__)), 'stories', 'rumplestiltskin.mp3'),
-            'the emporers new clothes': join(abspath(dirname(__file__)), 'stories', 'the_emporers_new_clothes.mp3'),
-            'the princess on the pea': join(abspath(dirname(__file__)), 'stories', 'the_princess_on_the_pea.mp3'),
-            'the elves and the shoemaker': join(abspath(dirname(__file__)), 'stories', 'the_elves_and_the_shoemaker.mp3'),
-            'the three billy goats gruff': join(abspath(dirname(__file__)), 'stories', 'the_three_billy_goats_gruff.mp3'),
-            'peter rabbit': join(abspath(dirname(__file__)), 'stories', 'peter_rabbit.mp3'),
+            'anonymitaet': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'anonymitaet.mp3'),    
+            'daten': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'daten.mp3'),
+            'koerperverletzung': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'koerperverletzung.mp3'),
+            'kreuzstich': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'kreuzstich.mp3'),
+            'lichter': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'lichter.mp3'),
+            'linz': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'linz.mp3'),
+            'mindestlohn': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'mindestlohn.mp3'),
+            'osteoporose': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'osteoporose.mp3'),
+            'palatschinken': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'palatschinken.mp3'),
+            'putzplaylist': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'putzplaylist.mp3'),
+            'sms': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'sms.mp3'),
+            'wetter': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'wetter.mp3'),
+            'whistleblowing': join(abspath(dirname(__file__)), 'soundfiles', 'history', 'whistleblowing.mp3')
         }
 
     #Search history
@@ -55,8 +57,8 @@ class ClueEngine(MycroftSkill):
     def handle_pick_story(self, message):
         self.speak_dialog('recent.heard')
         wait_while_speaking()
-        # not sure about story file here
-        self.process = play_mp3(self.play_list('peter rabbit'))
+        # need to replace with actual story
+        self.process = play_mp3(self.play_list('whistleblowing'))
 
     #What can you do
     @intent_file_handler('what.capabilities.intent')
