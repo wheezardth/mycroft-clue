@@ -1,0 +1,35 @@
+{
+  "max_allowed_core_version": 19.2,
+  "play_wav_cmdline": "aplay %1",
+  "play_mp3_cmdline": "mpg123 %1",
+  "listener": {
+        "wake_word": "hey cloud",
+        "phonemes": "HH EY . K L AW D",
+        "threshold": "1e-18",
+		 "lang": "en-us"
+  },
+  "hotwords": {
+        "hey cloud": {
+        "phonemes": "HH EY . K L AW D",
+        "threshold": "1e-18",
+        "lang": "en-us"		
+        }
+  },
+  "lang": "de-de",
+  "stt": {
+    "module": "mycroft",
+    "mycroft": {
+      "lang": "de-de"
+    }
+  },
+  "tts": {
+    "module": "google",
+    "google": {
+      "lang": "de"
+    }
+  },
+  "skills": {
+    "blacklisted_skills": ["fallback-wolfram-alpha", "mycroft-alarm.mycroftai", "mycroft-audio-record.mycroftai", "mycroft-date-time.mycroftai", "mycroft-fallback-duck-duck-go.mycroftai", "mycroft-hello-world.mycroftai", "mycroft-ip", "mycroft-joke.mycroftai", "mycroft-naptime.mycroftai", "mycroft-npr-news.mycroftai", "mycroft-personal.mycroftai", "mycroft-playback-control", "mycroft-reminder.mycroftai", "mycroft-singing.mycroftai", "mycroft-spelling.mycroftai", "mycroft-stock.mycroftai", "mycroft-support-helper.mycroftai", "mycroft-timer.mycroftai", "mycroft-version-checker.mycroftai", "mycroft-volume", "mycroft-weather.mycroftai", "mycroft-wiki.mycroftai"],
+    "priority_skills": ["mycroft-clue.mycroftai"]  
+  }
+}
